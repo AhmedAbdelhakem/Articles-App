@@ -16,8 +16,8 @@ class Loading extends StatelessWidget {
       child: Container(
         width: width,
         height: height,
-        padding: EdgeInsets.all(8.0),
-        decoration: BoxDecoration(
+        padding: const EdgeInsets.all(8.0),
+        decoration: const BoxDecoration(
           color: Colors.white,
         ),
       ),

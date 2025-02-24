@@ -2,11 +2,7 @@ import 'package:articles/logic/articles/articles_cubit.dart';
 import 'package:articles/logic/login/login_cubit.dart';
 import 'package:articles/logic/signup/signup_cubit.dart';
 import 'package:articles/models/myshared.dart';
-import 'package:articles/ui/pages/home_page.dart';
-import 'package:articles/ui/pages/home_screen.dart';
-import 'package:articles/ui/pages/loading_page.dart';
 import 'package:articles/ui/pages/login_page.dart';
-import 'package:articles/ui/pages/pagination.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -35,7 +31,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
         ),
-        home: LoginScreen(),
+        home: const LoginScreen(),
       ),
     );
   }

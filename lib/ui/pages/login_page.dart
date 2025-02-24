@@ -53,17 +53,17 @@ class _LoginScreenState extends State<LoginScreen> {
                     'assets/coloredLogo.svg',
                     height: 45,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 25,
                   ),
                   Container(
-                    padding: EdgeInsets.all(10),
+                    padding: const EdgeInsets.all(10),
                     alignment: Alignment.center,
                     width: 450,
                     height: 600,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(1),
-                      boxShadow: [BoxShadow(color: Colors.white)],
+                      boxShadow: const [BoxShadow(color: Colors.white)],
                     ),
                     child: ListView(
                       children: [
@@ -91,13 +91,13 @@ class _LoginScreenState extends State<LoginScreen> {
                                       fontSize: 16),
                                 ),
                                 TextSpan(
-                                  recognizer: new TapGestureRecognizer()
+                                  recognizer: TapGestureRecognizer()
                                     ..onTap = () {
                                       Navigator.push(
                                           context,
                                           MaterialPageRoute(
                                             builder: (context) =>
-                                                SignUpScreen(),
+                                                const SignUpScreen(),
                                           ));
                                     },
                                   text: "Create an account",
@@ -110,7 +110,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 15,
                         ),
                         Row(
@@ -125,7 +125,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 12,
                         ),
                         //put the email address
@@ -135,7 +135,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 emailValidator(value.toString()),
                             controller: emailController,
                             keyboardType: TextInputType.emailAddress),
-                        SizedBox(
+                        const SizedBox(
                           height: 16,
                         ),
                         //put the password address
@@ -154,10 +154,10 @@ class _LoginScreenState extends State<LoginScreen> {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                      builder: (context) => SignUpScreen(),
+                                      builder: (context) => const SignUpScreen(),
                                     ));
                               },
-                              child: Text(
+                              child: const Text(
                                 " Forget Password ?",
                                 style: TextStyle(
                                   fontSize: 12,
@@ -175,7 +175,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             controller: passwordController,
                             obscureText: isPasswordVisable,
                             suffixIcon: myIconWidget()),
-                        SizedBox(
+                        const SizedBox(
                           height: 26,
                         ),
                         myButtonWidget(
@@ -189,7 +189,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             }
                           },
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 25,
                         ),
                         Center(
@@ -199,12 +199,12 @@ class _LoginScreenState extends State<LoginScreen> {
                                 GoogleFonts.redHatDisplay(color: Colors.black),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 25,
                         ),
                         ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                              primary: Color(0xfff5f8fa),
+                              backgroundColor: const Color(0xfff5f8fa),
                               elevation: 0,
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(0),
@@ -219,23 +219,23 @@ class _LoginScreenState extends State<LoginScreen> {
                                   width: 20,
                                   height: 50,
                                 ),
-                                SizedBox(width: 9.75),
+                                const SizedBox(width: 9.75),
                                 Text(
                                   "Continue with Google",
                                   style: GoogleFonts.redHatDisplay(
-                                    color: Color(0xff7e8299),
+                                    color: const Color(0xff7e8299),
                                     fontSize: 14.95,
                                     fontWeight: FontWeight.w500,
                                   ),
                                 )
                               ],
                             )),
-                        SizedBox(
+                        const SizedBox(
                           height: 25,
                         ),
                         ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                              primary: Color(0xfff5f8fa),
+                              backgroundColor: const Color(0xfff5f8fa),
                               elevation: 0,
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(0),
@@ -250,11 +250,11 @@ class _LoginScreenState extends State<LoginScreen> {
                                   width: 20,
                                   height: 50,
                                 ),
-                                SizedBox(width: 9.75),
+                                const SizedBox(width: 9.75),
                                 Text(
                                   "Continue with Facebook",
                                   style: GoogleFonts.redHatDisplay(
-                                    color: Color(0xff7e8299),
+                                    color: const Color(0xff7e8299),
                                     fontSize: 14.95,
                                     fontWeight: FontWeight.w500,
                                   ),
@@ -277,7 +277,7 @@ class _LoginScreenState extends State<LoginScreen> {
     Navigator.pushReplacement(
         context,
         MaterialPageRoute(
-          builder: (context) => ArticlesScreen(),
+          builder: (context) => const ArticlesScreen(),
         ));
   }
 
@@ -300,12 +300,12 @@ class _LoginScreenState extends State<LoginScreen> {
           setState(() {});
         },
         child: isPasswordVisable
-            ? Icon(
+            ? const Icon(
                 Icons.visibility_off,
                 size: 22,
                 color: Colors.amber,
               )
-            : Icon(
+            : const Icon(
                 Icons.visibility,
                 size: 22,
                 color: Colors.amber,

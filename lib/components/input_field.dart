@@ -12,7 +12,7 @@ Widget inputField(
     }) {
   return Container(
     height: 45,
-    decoration: BoxDecoration(
+    decoration: const BoxDecoration(
       color: Color(0xfff5f8fa)
     ),
     child: TextFormField(
@@ -28,7 +28,7 @@ Widget inputField(
         floatingLabelAlignment: FloatingLabelAlignment.center,
           label: Text(label,style: GoogleFonts.redHatDisplay(fontSize: 16),),
           labelStyle: GoogleFonts.redHatDisplay(fontSize: 16),
-          contentPadding: EdgeInsets.symmetric(vertical: 17,horizontal: 12),
+          contentPadding: const EdgeInsets.symmetric(vertical: 17,horizontal: 12),
           border: InputBorder.none,
           suffixIcon: suffixIcon,
       ),

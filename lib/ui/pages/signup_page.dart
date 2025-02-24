@@ -45,7 +45,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Container(
-              padding: EdgeInsets.only(top: 55),
+              padding: const EdgeInsets.only(top: 55),
               alignment: Alignment.center,
               child: SingleChildScrollView(
                 child: Column(
@@ -54,16 +54,16 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       'assets/coloredLogo.svg',
                       height: 45,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 25,
                     ),
                     Container(
-                      padding: EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
                       width: 450,
                       height: 750,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(1),
-                        boxShadow: [BoxShadow(color: Colors.white)],
+                        boxShadow: const [BoxShadow(color: Colors.white)],
                       ),
                       child: SingleChildScrollView(
                         child: Column(
@@ -92,13 +92,13 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                           fontSize: 16),
                                     ),
                                     TextSpan(
-                                      recognizer: new TapGestureRecognizer()
+                                      recognizer: TapGestureRecognizer()
                                         ..onTap = () {
                                           Navigator.push(
                                               context,
                                               MaterialPageRoute(
                                                 builder: (context) =>
-                                                    LoginScreen(),
+                                                    const LoginScreen(),
                                               ));
                                         },
                                       text: "Sign in here",
@@ -111,12 +111,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                 ),
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 25,
                             ),
                             ElevatedButton(
                                 style: ElevatedButton.styleFrom(
-                                  primary: Color(0xfff5f8fa),
+                                  backgroundColor: const Color(0xfff5f8fa),
                                   elevation: 0,
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(0),
@@ -131,23 +131,23 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                       width: 20,
                                       height: 50,
                                     ),
-                                    SizedBox(width: 9.75),
+                                    const SizedBox(width: 9.75),
                                     Text(
                                       "Continue with Google",
                                       style: GoogleFonts.redHatDisplay(
-                                        color: Color(0xff7e8299),
+                                        color: const Color(0xff7e8299),
                                         fontSize: 14.95,
                                         fontWeight: FontWeight.w500,
                                       ),
                                     )
                                   ],
                                 )),
-                            SizedBox(
+                            const SizedBox(
                               height: 25,
                             ),
                             ElevatedButton(
                                 style: ElevatedButton.styleFrom(
-                                  primary: Color(0xfff5f8fa),
+                                  backgroundColor: const Color(0xfff5f8fa),
                                   elevation: 0,
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(0),
@@ -162,18 +162,18 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                       width: 20,
                                       height: 50,
                                     ),
-                                    SizedBox(width: 9.75),
+                                    const SizedBox(width: 9.75),
                                     Text(
                                       "Continue with Facebook",
                                       style: GoogleFonts.redHatDisplay(
-                                        color: Color(0xff7e8299),
+                                        color: const Color(0xff7e8299),
                                         fontSize: 14.95,
                                         fontWeight: FontWeight.w500,
                                       ),
                                     ),
                                   ],
                                 )),
-                            SizedBox(
+                            const SizedBox(
                               height: 25,
                             ),
                             Center(
@@ -183,7 +183,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                     color: Colors.black),
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 15,
                             ),
                             //put the email address
@@ -199,7 +199,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                 ),
                               ],
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 12,
                             ),
                             inputField(
@@ -208,7 +208,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                     usernameValidator(value.toString()),
                                 controller: userNameController,
                                 keyboardType: TextInputType.name),
-                            SizedBox(
+                            const SizedBox(
                               height: 16,
                             ),
                             //put the email address
@@ -224,7 +224,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                 ),
                               ],
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 12,
                             ),
                             inputField(
@@ -233,7 +233,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                     phoneValidator(value.toString()),
                                 controller: phoneController,
                                 keyboardType: TextInputType.number),
-                            SizedBox(
+                            const SizedBox(
                               height: 16,
                             ),
                             //put the email address
@@ -249,7 +249,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                 ),
                               ],
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 12,
                             ),
                             inputField(
@@ -258,7 +258,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                     emailValidator(value.toString()),
                                 controller: emailController,
                                 keyboardType: TextInputType.emailAddress),
-                            SizedBox(
+                            const SizedBox(
                               height: 16,
                             ),
                             //put the password address
@@ -274,7 +274,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                 ),
                               ],
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 12,
                             ),
                             inputField(
@@ -284,7 +284,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                 controller: passwordController,
                                 obscureText: isPasswordVisable,
                                 suffixIcon: myIconWidget()),
-                            SizedBox(
+                            const SizedBox(
                               height: 26,
                             ),
                             myButtonWidget(
@@ -313,12 +313,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
           setState(() {});
         },
         child: isPasswordVisable
-            ? Icon(
+            ? const Icon(
                 Icons.visibility_off,
                 size: 22,
                 color: Colors.amber,
               )
-            : Icon(
+            : const Icon(
                 Icons.visibility,
                 size: 22,
                 color: Colors.amber,

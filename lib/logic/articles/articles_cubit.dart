@@ -18,9 +18,9 @@ class ArticlesCubit extends Cubit<ArticlesState> {
   ];
 
   List<Widget> screen = [
-    HomeScreen(),
-    HomeScreen(),
-    HomeScreen(),
+    const HomeScreen(),
+    const HomeScreen(),
+    const HomeScreen(),
   ];
 
   void getHttp() async {
@@ -89,7 +89,7 @@ class ArticlesCubit extends Cubit<ArticlesState> {
   String tasksState = "active";
 
   void changeTaskState(String state){
-    this.tasksState = state;
+    tasksState = state;
     getHttp();
     sports();
     business();

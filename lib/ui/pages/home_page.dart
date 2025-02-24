@@ -8,6 +8,8 @@ import 'package:intl/intl.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
+
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
@@ -121,28 +123,28 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget buildEmptyDesign() {
-    return Padding(
-      padding: const EdgeInsets.all(13.0),
+    return const Padding(
+      padding: EdgeInsets.all(13.0),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          const Loading(
+          Loading(
             height: 200,
             width: double.infinity,
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 10.0),
+            padding: EdgeInsets.symmetric(vertical: 10.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                const Loading(
+                Loading(
                   height: 20,
                   width: 90,
                 ),
-                const SizedBox(
+                SizedBox(
                   width: 15,
                 ),
-                const Loading(
+                Loading(
                   height: 20,
                   width: 90,
                 ),
@@ -152,34 +154,34 @@ class _HomeScreenState extends State<HomeScreen> {
           Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              const Loading(
+              Loading(
                 height: 20,
                 width: 100,
               ),
-              const Loading(
+              Loading(
                 height: 20,
                 width: 100,
               ),
             ],
           ),
-          const SizedBox(
+          SizedBox(
             height: 10,
           ),
-          const Loading(
+          Loading(
             height: 20,
             width: double.infinity,
           ),
-          const SizedBox(
+          SizedBox(
             height: 10,
           ),
-          const Loading(
+          Loading(
             height: 20,
             width: double.infinity,
           ),
-          const SizedBox(
+          SizedBox(
             height: 10,
           ),
-          const Loading(
+          Loading(
             height: 20,
             width: double.infinity,
           ),

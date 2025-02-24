@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class InfiniteScrollView extends StatefulWidget {
+  const InfiniteScrollView({super.key});
+
   @override
   _InfiniteScrollViewState createState() => _InfiniteScrollViewState();
 }
@@ -8,7 +10,7 @@ class InfiniteScrollView extends StatefulWidget {
 class _InfiniteScrollViewState extends State<InfiniteScrollView> {
   List<int> items = List.generate(12, (index) => index); // initial list of items
   bool isLoading = false; // to check if new data is being loaded
-  ScrollController _scrollController = ScrollController(); // controller to listen to scroll events
+  final ScrollController _scrollController = ScrollController(); // controller to listen to scroll events
 
   @override
   void initState() {
@@ -33,7 +35,7 @@ class _InfiniteScrollViewState extends State<InfiniteScrollView> {
         isLoading = true;
       });
       // simulate loading new data after a delay
-      Future.delayed(Duration(seconds: 2)).then((_) {
+      Future.delayed(const Duration(seconds: 2)).then((_) {
         setState(() {
           items.addAll(List.generate(20, (index) => index + items.length)); // add new data to the list
           isLoading = false;
@@ -46,7 +48,7 @@ class _InfiniteScrollViewState extends State<InfiniteScrollView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Infinite Scroll View'),
+        title: const Text('Infinite Scroll View'),
       ),
       body: ListView.builder(
         itemCount: items.length,

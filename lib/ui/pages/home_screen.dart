@@ -6,6 +6,8 @@ import 'package:number_paginator/number_paginator.dart';
 
 
 class ArticlesScreen extends StatefulWidget {
+  const ArticlesScreen({super.key});
+
   @override
   _ArticlesScreenState createState() => _ArticlesScreenState();
 }
@@ -70,10 +72,10 @@ class _ArticlesScreenState extends State<ArticlesScreen> {
             ),
             body: cubit.screen[cubit.position],
             bottomNavigationBar: Padding(
-              padding: EdgeInsets.all(4),
+              padding: const EdgeInsets.all(4),
               child: NumberPaginator(
                 config: NumberPaginatorUIConfig(
-                  contentPadding: EdgeInsets.symmetric(horizontal: 1,vertical: 2),
+                  contentPadding: const EdgeInsets.symmetric(horizontal: 1,vertical: 2),
                   buttonSelectedBackgroundColor: Colors.amber,
                   buttonUnselectedForegroundColor: Colors.grey[400],
                 ),
