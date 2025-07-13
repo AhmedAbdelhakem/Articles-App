@@ -1,16 +1,42 @@
-# articles
+# Articles-App Documentation
 
-A new Flutter project.
+Welcome to the documentation for **Articles-App**!
 
-## Getting Started
+This site will help you understand, install, use, and contribute to the Articles-App project.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 📚 Sections
+
+- [Getting Started](#/getting-started)
+- [Usage](#/usage)
+- [API Reference](#/api)
+- [FAQ](#/faq)
+
+Use the sidebar to navigate through the sections.
+
+---
+
+## 🚀 Project Overview
+
+Articles-App is a Flutter-based application designed to provide an intuitive and feature-rich platform for reading and managing articles.
+
+---
+
+## 🛠️ Flutter Resources
+
+If you’re new to Flutter, check out these resources:
 
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- [Flutter documentation](https://docs.flutter.dev/)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 🙌 Contributing
+
+Contributions are welcome! Please see [CONTRIBUTING.md](../CONTRIBUTING.md) for guidelines.
+
+---
+
+For questions, check the [FAQ](#/faq) or open an issue on [GitHub](https://github.com/AhmedAbdelhakem/Articles-App/issues).
